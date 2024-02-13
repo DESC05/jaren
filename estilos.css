@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+  margin: 50px;
+  background-color: #ffe6e6; /* Color de fondo suave */
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff4d4d; /* Rojo oscuro */
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ff6666; /* Rojo */
+  color: #fff; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4d4d; /* Rojo oscuro al pasar el mouse */
+}
+
+#result-message {
+  margin-top: 20px;
+  font-size: 18px;
+  display: none;
+  color: #ff4d4d; /* Rojo oscuro */
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Añadir estilos para los corazones */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff4d4d; /* Rojo oscuro */
+  clip-path: polygon(50% 15%, 100% 100%, 0% 100%);
+  animation: floatingHeart 1s ease-out;
+}
+
+@keyframes floatingHeart {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+}
+#Foto {
+  display: block;
+  margin: 75px auto; /* Centrar horizontalmente con márgenes superior e inferior de 20px */
+  max-width: 55%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  float: center;
+}
